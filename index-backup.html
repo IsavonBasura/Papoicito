@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Hola Papoi</title>
+    </head>
+    <body>
+        <audio id="audioFondo" src="Audio.mp4" loop></audio>
+        <button id="playAudioBtn" type="button">Reproducir audio</button>
+        <button id="stopAudioBtn" type="button">Detener audio</button>
+        <label for="volumeControl">Volumen:</label>
+        <input id="volumeControl" type="range" min="0" max="1" step="0.01" value="0.70">
+        <span id="volumeValue">70%</span>
+        <h1>¡Hola, Papoi!</h1>
+        <h2>¿Cómo estás?</h2>
+        <h3>Yo estoy bien :3</h3>
+        <div>Yo te quiero mucho</div>
+        <p><em>¿Tú sabías?</em></p>
+        <strong>Te apuesto un besito a que sí sabías</strong><br>
+        <a href="https://www.youtube.com/watch?v=I8Q7V4EBKiI">Esta canción es todos los días contigo c:</a><br>
+        <img src="IMG_0028.jpeg" width="300"><br>
+        <a href="https://www.instagram.com/p/DLTtqOgOIUH/">
+            <button>Botón de tutito instantáneo pero abrazándonos</button>
+        </a>
+
+        <section>
+            <h2>Formulario de atención al Papoi</h2>
+            <form id="contactForm" action="#" method="POST">
+                <label for="name">Nombre completo:</label><br>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required><br><br>
+
+                <label for="subject">Asunto:</label><br>
+                <input type="text" id="subject" name="subject" placeholder="¿En qué podemos ayudarte?" required><br><br>
+
+                <label for="message">Mensaje:</label><br>
+                <textarea id="message" name="message" rows="5" placeholder="Escribe tu consulta o comentario aquí" required></textarea><br><br>
+
+                <button type="submit">Enviar consulta</button>
+                <div id="formStatus" class="form-status"></div>
+            </form>
+        </section>
+        <script src="extras.js"></script>
+    </body>
+</html>
